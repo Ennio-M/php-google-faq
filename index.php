@@ -63,13 +63,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <?php
-            foreach($items as $item) {
-                echo $item['title'];
-                echo $item['content'];
-            }
-        ?>
-    </div>
+    <header class="p-3 pb-0">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="Logo Google">
+                <span class="bigger">Privacy e termini</span>
+            </div>
+            <div>
+                <a aria-label="App Google" href="https://www.google.it/intl/it/about/products">
+                    <svg class="app_google">
+                        <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+                    </svg>
+                </a>
+                <img src="https://lh3.googleusercontent.com/ogw/ADea4I5yne1QnPkNrFamQn7uJ0I_VeszhnkRLYp0cv8t=s32-c-mo" alt="Profilo" class="rounded-circle ms-3">
+            </div>
+        </div>
+        <nav class="mt-2">
+            <ul class="p-0 m-0">
+                <li>
+                    <a href="https://policies.google.com/">Introduzione</a> 
+                </li>
+                <li>
+                    <a href="https://policies.google.com/privacy">Norme sulla privacy</a> 
+                </li>
+                <li>
+                    <a href="https://policies.google.com/terms">Termini di servizio</a> 
+                </li>
+                <li>
+                    <a href="https://policies.google.com/technologies">Tecnologie</a> 
+                </li>
+                <li class="active">
+                    <a href="#">Domande frequenti</a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <?php
+                foreach($items as $item) {
+                    echo $item['title'];
+                    echo $item['content'];
+                }
+            ?>
+        </div>
+    </main>
 </body>
 </html>

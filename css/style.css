@@ -6,6 +6,13 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+/* corpo */
+main{
+    margin-top: 90px;
+}
+.container{
+    max-width: 978px !important;
+}
 a{
     text-decoration: none !important;
 }
@@ -13,5 +20,38 @@ p{
     padding: 5px 0;
 }
 h2, h3{
-    margin-top: 70px !important;
+    padding-top: 70px !important;
+}
+/* header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+.app_google{
+    height: 24px;
+    width: 24px;
+}
+nav>ul>li{
+    display: inline-block;
+    font-size: 1.1em;
+    margin-right: 2em;
+    padding-bottom: 2px;
+}
+nav a, nav a:hover{
+    color: black;
+}
+nav li.active a, nav li:active a{
+    color: #3367D6 !important;
+    border-bottom: 2px solid #3367D6;
+}
+ul{
+    list-style-type: none;
+}
+/* utilities */
+.bigger{
+    font-size: 1.5em;
 }
